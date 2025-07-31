@@ -38,9 +38,14 @@
         <p>Your ideas matter to me. Share your info, and I’ll get back to you as soon as I can.</p>
     </div>
 
-    <form name="contact" method="POST" data-netlify="true" class="contact-form">
-    <!-- Hidden field for form-name to let Netlify know which form is being submitted -->
+    <form name="contact" method="POST" data-netlify="true" action="/success" class="contact-form">
+    <!-- Hidden field for form-name -->
     <input type="hidden" name="form-name" value="contact">
+
+    <!-- Honeypot field to prevent spam -->
+    <div style="display: none;">
+        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+    </div>
 
     <div class="name-fields">
         <div>
