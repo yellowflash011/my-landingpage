@@ -1,0 +1,326 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:transparent;
+    position: relative;
+}
+
+.logo-img {
+    width: 120px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu.active {
+    display: block;
+}
+.info-sections{
+    
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+    }
+
+    nav ul.active {
+        display: flex;
+        width: auto;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .hero-text {
+        margin-top: 50vh;
+        color: white;
+    }
+    .hero{
+        height: 80vh;
+    }
+
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width: auto;
+    color: white;
+    padding: 0 20px;
+    background: black
+    background-size: cover;
+    object-fit: contain;
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; 
+    background-position-y: 0px;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    width: 50vh;
+    height: 60vh;
+    border-radius: 10%;
+    margin-right: 20vh;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px 5px gold;
+}
+
+/* Info Sections (Styled Boxes) */
+.info-sections {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px gold;
+    transition: transform 0.3s ease;
+}
+
+.info-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Skills Section with Progress Bars */
+.skills-section {
+    padding: 50px 20px;
+    background-color: #1B1B1B;
+    text-align: center;
+}
+
+.skills-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #111; /* Dark matte black background */
+    color: white; /* Text color in white to contrast */
+    border-radius: 20px; /* Optional: makes the corners rounded */
+    padding: 20px; /* Optional: adjust padding as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Optional: adds subtle shadow for depth */
+    transition: all 0.3s ease; /* Optional: smooth transition for hover effects */
+    border: 1px solid white;
+}
+.skill:hover {
+    background-color: #333; /* Lighter matte black background on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect when hovered */
+    border: 1px solid skyblue;
+    
+}
+.skill h4 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: skyblue;
+    border-radius: 5px;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #222;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+
+  /* background-color: #ffffff; Base color, adjust as needed */
+  
+
+.card {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 18%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease; /* Smooth transition for all changes */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for matte effect */
+  border: 1px solid #e0e0e0; /* Light border to enhance matte look */
+  border-radius: 15px; /* Optional: slight rounding for a softer edge */
+  backdrop-filter: blur(2px); /* Optional: slight blur for depth, if supported */
+}
+
+.card:hover {
+  background-color: #333333; /* Slightly darker background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  cursor: pointer; /* Changes cursor to indicate interactivity */
+  border: 1px solid skyblue;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin: 10px 0;
+}
+
+.button {
+  background-color: #1a3c34;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2e5a50;
+}
+.approach-h1 {
+  text-align: left;
+  padding: 20px;
+  padding-left: 60px;
+  color: #ffffff;
+}
+.my-approach{
+    background-color: #111;
+}
