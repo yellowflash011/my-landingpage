@@ -20,7 +20,7 @@ header {
   justify-content: space-between; /* Distribute space between logo and navigation links */
   padding: 10px 20px; /* Add 10px padding top and bottom, 20px left and right */
   /* background-color: rgba(0, 0, 0, 0.2); Set background color to black with some transparency */
-  background-color: rgb(99, 99, 99,0.7); 
+  background-color: rgb(99, 99, 99,0.7);
   backdrop-filter: blur(8px);
 }
 
