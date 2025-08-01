@@ -468,6 +468,7 @@ footer {
         flex-direction: column;
         padding: 20px;
         min-height: auto;
+        width: 70vh;
     }
 
     .slideshow-container {
@@ -595,6 +596,7 @@ footer {
         padding: 15px;
         margin: 20px auto;
         min-height: auto;
+        width: 80vh;
     }
 
     .slideshow-container {
