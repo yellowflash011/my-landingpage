@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Hussain Nazir</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="about.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="about-complete.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
@@ -13,20 +13,18 @@
     <header>
         <div class="logo-image">
             <a href="index.html">
-                <img src="website logo1.png" alt="LOGO" class="logo-img">
-            </a>
+            <img src="website logo1.png" alt="LOGO" class="logo-img"></a>
         </div>
-        <!-- Hamburger Icon for Mobile -->
-        <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger">
             <div></div>
             <div></div>
             <div></div>
         </div>
         <nav>
-            <ul id="menu">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="cta-button">Contact</a></li>
+                <li><a href="#contact" class="cta-button">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -63,7 +61,18 @@
             <p>Collaboration is at the heart of my process. I take a strategic approach to every project, ensuring it aligns with your business goals and maximizes impact.</p>
         </div>
     </section>
-
+  <section class="project-section">
+    <div class="slideshow-container">
+      <img src="ciit.jpeg" alt="Project 1">
+    </div>
+    <div class="content-container">
+      <h2 id="slide-title">Student at Comsats University</h2>
+      <p id="slide-description">Student of Software Engineering at COMSATS, passionate about building practical tech solutions through code and creativity.</p>
+      <div class="buttons">
+        <a href="#" id="website-btn" class="btn secondary">Visit Website</a>
+      </div>
+    </div>
+  </section>
     <!-- Technical Skills Section with Progress Bars -->
     <section class="skills-section">
         <h2>Technical Skills</h2>
@@ -92,7 +101,6 @@
       <li>In-depth stakeholder interviews</li>
       <li>Comprehensive market analysis</li>
       <li>User research with real customers</li>
-      <li>Competitive audit with actionable insights</li>
     </ul>
   </div>
   <div class="card">
@@ -121,7 +129,6 @@
       <li>Secure backend integration</li>
       <li>High quality scores through QA</li>
     </ul>
-    <a href="#" class="button">Free Consultation</a>
   </div>
 </div>
 </section>
@@ -139,13 +146,6 @@
         <p>© 2025 Hussain Nazir. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
-    <script>
-        // Toggle Menu for Mobile Hamburger
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('active');
-        }
-    </script>
+    <script src="about.js"></script>
 </body>
 </html>

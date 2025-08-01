@@ -1,3 +1,6 @@
+// Create an IntersectionObserver to detect when the section is in the viewport
+
+
 // Hamburger Menu and Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('nav ul');
