@@ -664,7 +664,7 @@ nav .cta-button:hover {
     flex-direction: row; /* Logo and hamburger side by side */
     justify-content: flex-start; /* Align items to the left */
     align-items: center;
-    padding: 10px 15px;
+    padding: 0;
   }
 
   .logo-image {
@@ -676,9 +676,9 @@ nav .cta-button:hover {
 
   .logo-img {
     width: 90px;
-    height: 60px;
-    margin-left: 10px; /* Small left margin for padding */
-    margin-top: 0;
+    height: 40px;
+    margin-left: 2vw; /* Small left margin for padding */
+    margin-top: 1vh;
   }
 
   .hamburger {
@@ -686,6 +686,7 @@ nav .cta-button:hover {
     position: absolute;
     top: 15px;
     right: 15px;
+    margin-top: 0;
   }
 
   nav ul {
