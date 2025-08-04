@@ -16,12 +16,15 @@ body {
 /* Styling for the header */
 header {
   display: flex; /* Enable flexbox layout for the header */
-  border-radius: 5px;
+  border-radius: 80px;
   justify-content: space-between; /* Distribute space between logo and navigation links */
-  padding: 10px 20px; /* Add 10px padding top and bottom, 20px left and right */
+  /* Add 10px padding top and bottom, 20px left and right */
   /* background-color: rgba(0, 0, 0, 0.2); Set background color to black with some transparency */
   background-color: rgb(99, 99, 99,0.7);
   backdrop-filter: blur(8px);
+  margin-top: 10px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 /* Styling for the logo in the header */
@@ -38,6 +41,7 @@ nav ul {
   list-style: none; /* Remove default bullet points from the list */
   display: flex; /* Use flexbox to align list items horizontally */
   gap: 20px; /* Add space between each navigation item */
+  margin-right: 2vw;
 }
 
 /* Styling for the individual navigation links */
@@ -54,7 +58,7 @@ nav a:hover{
 nav .cta-button {
   background-color: rgba(128, 128, 128, 0.4);
   border: 2px solid rgba(255, 255, 255, 0.7);
-  padding: 10px 20px; /* Add padding inside the button */
+  padding: 10px 10px; /* Add padding inside the button */
   border-radius: 5px; /* Round the corners of the button */
   color: white; /* Set the text color of the button to white */
   font-weight: bold; /* Make the button text bold */
@@ -208,7 +212,8 @@ nav .cta-button:hover {
   height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Ensure logo fits without distortion */
   justify-content: left;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-left: 2vw;
 }
 .logo-image:hover {
   cursor: pointer;
@@ -473,7 +478,6 @@ nav .cta-button:hover {
     display: flex;
     justify-content: flex-start; /* Align items to the left */
     align-items: center; /* Vertically center */
-    padding: 10px 15px; /* Adjusted padding for mobile */
     position: relative; /* Ensure hamburger positioning is relative to header */
   }
 
@@ -490,7 +494,7 @@ nav .cta-button:hover {
     width: 90px;
     height: 40px;
     margin-top: 5px; /* No vertical offset */
-    margin-left: 0px; /* Small left margin for padding */
+    margin-left: 3vw; /* Small left margin for padding */
     object-fit: contain; /* Ensure logo fits without distortion */
   }
 
@@ -508,7 +512,7 @@ nav .cta-button:hover {
   .hamburger {
     display: flex; /* Show hamburger in mobile view */
     position: absolute;
-    top: 12px;
+    top: 5px;
     right: 15px; /* Position in top-right corner */
   }
 
@@ -529,6 +533,8 @@ nav .cta-button:hover {
 
   nav ul.active {
     display: flex; /* Show menu when .active is added */
+    border-radius: 30px;
+    margin: 0;
   }
 
   nav a {
