@@ -581,7 +581,7 @@ nav .cta-button:hover {
     justify-content: center; /* Center content vertically */
     height: 80vh; /* Adjust the height of the hero section */
     padding: 0 20px;
-    margin-top: 8vh;
+    margin-top: 12vh;
   }
 
   .hero-image {
