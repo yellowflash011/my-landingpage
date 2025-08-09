@@ -736,6 +736,7 @@ nav .cta-button:hover {
     flex-direction: row; /* Image and text side by side */
     height: 70vh;
     padding: 0 20px;
+    margin-top: 22vh;
   }
 
   .hero-image {
