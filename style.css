@@ -79,6 +79,7 @@ nav .cta-button:hover {
   justify-content: space-between; /* Ensure the text and image are spaced correctly */
   height: 100vh; /* Set the height of the hero section to 80% of the viewport height */
   padding: 0 40px; /* Horizontal padding */
+  margin-top: 3vh;
 }
 
 .hero-text_2 {
